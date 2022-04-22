@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "f2c2b5ca-c7c4-4fae-9ef9-24df9b2b8396",
+		"name": "Task One",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\": \"admin1\",\r\n    \"password\": \"admin1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9900/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Merchant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiI4MGI0NGRkMS0yNjFjLTRhMWYtYTRhMC00ZGQ2NTlkZTYyNTkiLCJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTA3MTI1MjIsInVzZXJfaWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbjEifQ.R03QY2xe4bswWtjgKWQZZjslVuvuYuT4fha7jV9xqm0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2021-11-04\",\r\n    \"merchant_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9900/report?limit=10&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"report"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Outlet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiI4MGI0NGRkMS0yNjFjLTRhMWYtYTRhMC00ZGQ2NTlkZTYyNTkiLCJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTA3MTI1MjIsInVzZXJfaWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbjEifQ.R03QY2xe4bswWtjgKWQZZjslVuvuYuT4fha7jV9xqm0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2021-11-04\",\r\n    \"outlet_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9900/report?limit=10&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9900",
+					"path": [
+						"report"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "400000": {"var": "ErrBadRequest", "msg": "Bad Request"},
+  "400001": {"var": "ErrInvalidFieldFormat", "msg": "Invalid Field Format %v"},
+  "400002": {"var": "ErrInvalidFieldMandatory", "msg": "Invalid Mandatory Field %v"},
+  "401000": {"var": "ErrUnauthorized","msg": "Unauthorized"},
+  "500000": {"var": "ErrGeneralError", "msg": "General Error"},
+  "404000" : {"var": "ErrUserNotFound", "msg": "User Not Found"},
+  "404001" : {"var": "ErrMerchantNotFound", "msg": "Merchant Not Found"},
+  "404002" : {"var": "ErrOutletNotFound", "msg": "Outlet Not Found"},
+  "404003" : {"var": "ErrDataNotFound", "msg": "Data Not Found"}
+}
